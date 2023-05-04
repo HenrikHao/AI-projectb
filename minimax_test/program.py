@@ -54,7 +54,7 @@ class Agent:
                 #print('time costs this round = ', endtime - starttime)
                 actions = minimax.root.get_legal_actions()
                 return random.choice(actions)
-                return best_action
+                #return best_action
             case PlayerColor.BLUE:
                 # This is going to be invalid... BLUE never spawned!
                 starttime = time.time()
@@ -112,7 +112,7 @@ class Node:
                         spreads.append(SpreadAction(cor, direction))
             else:
                 spawns.append(SpawnAction(cor))
-        random.shuffle(spawns)
+        #random.shuffle(spawns)
         if self.state._total_power >= 49:
             return spreads
         else:
@@ -217,6 +217,7 @@ class MiniMax:
                 return float('inf'), node.action
             else:
                 return float('-inf'), node.action
+            
 
         legal_actions = node.get_legal_actions()
         best_action = None

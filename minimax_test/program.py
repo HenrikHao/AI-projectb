@@ -112,7 +112,7 @@ class Node:
                         spreads.append(SpreadAction(cor, direction))
             else:
                 spawns.append(SpawnAction(cor))
-        #random.shuffle(spawns)
+        random.shuffle(spawns)
         if self.state._total_power >= 49:
             return spreads
         else:

@@ -10,3 +10,4 @@ minimax/__pycache__/
 minimax/__pycache__/program.cpython-310.pyc
 minimax_test/__pycache__/__init__.cpython-310.pyc
 minimax_test/__pycache__/program.cpython-310.pyc
+*.txt
